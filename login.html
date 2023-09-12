@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="login">
+  <h2 class="active"> Login </h2>
+
+  <form id="loginForm">
+    
+    <div class="input-container">
+      
+      <input type="text" class="text" name="username" placeholder="username" required>
+    </div>
+
+    <br>
+
+    <div class="input-container">
+      
+      <input type="password" class="text" name="password" placeholder="password" required>
+    </div>
+    
+    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+    <label for="checkbox-1-1">Remember me</label>
+    
+    <button type="submit" class="signin">Login</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Redirect to the home page
+      window.location.href = 'homepage.html';
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
