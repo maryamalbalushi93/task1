@@ -1,52 +1,52 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-</head>
+    <title> Login</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
 <body>
+  <div class="main_div">
+    <div class="title" >Login</div>
+	<br>
+    <form action="homepage.html">
+      <div class="input_box">
+        <input type="text" placeholder="  Username" required>
+        <div class="icon"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="  Password" required>
+        <div class="icon"><i class="fas fa-lock"></i></div>
+      </div>
+	  	<br>
 
-<div class="login">
-  <h2 class="active"> Login </h2>
+      <div class="option_div">
+        <div class="check_box">
+          <input type="checkbox">
+          <span>Remember me</span>
+        </div>
+			<br>
 
-  <form id="loginForm">
-    
-    <div class="input-container">
-      
-      <input type="text" class="text" name="username" placeholder="username" required>
-    </div>
-
-    <br>
-
-    <div class="input-container">
-      
-      <input type="password" class="text" name="password" placeholder="password" required>
-    </div>
-    
-    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
-    <label for="checkbox-1-1">Remember me</label>
-    
-    <button type="submit" class="signin">Login</button>
-  </form>
-</div>
-
-<script>
-  document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-
-      // Redirect to the home page
-      window.location.href = 'homepage.html';
-  });
-</script>
-
+        
+      </div>
+      <div class="input_box button">
+        <input type="submit" value="Login">
+      </div>
+	  	<br>
+<div class="forget_div" align="center">
+          <a href="#">Forgot password?</a>
+        </div>
+		<br>
+      <div class="sign_up">
+        not a member? <a href="#">Signup now</a>
+      </div>
+    </form>
+  </div>
+  
 </body>
 </html>
-
-
 
 
 
